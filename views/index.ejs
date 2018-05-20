@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>ExpressJS Demo</title>
+</head>
+<body>
+
+  <h2>Blog</h2>
+  <ul class="posts">
+  <% for(var i=0; i<posts.length; i++) {%>
+    <li class="post" style="list-style-type: none;">
+      <span><%= posts[i].title %></span></li><br>
+      <span><%= posts[i].body %></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <!-- <form action="/" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+  </form> -->
+</body>
+</html>
